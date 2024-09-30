@@ -1,0 +1,27 @@
+
+body{
+    font-family: Orbitron;
+  }
+  
+  .img {
+    background-image: url('/images/matrix-binary-code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .nav-bar {
+    background-color:rgb(7, 7, 7);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: #00FF41 0px 20px 30px -10px;
+    
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #00FF41;
+  }
+  
+  input {
+    background-color: black;
+  }

@@ -1,0 +1,50 @@
+<div
+  class="card"
+  style="width:50%; margin: 0 auto; margin-top: 70px; border: 3.5px solid black; border-radius: 10px; box-shadow: #00FF41 0px 20px 30px -10px;"
+>
+  <h2
+    class="card-header"
+    style="background-color:rgb(7, 7, 7); color: #00FF41;"
+  >Edit Post</h2>
+  <form
+    class="card-body"
+    id="edit-post-form"
+    style="background-color:black; color: #00FF41;"
+  >
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="hidden" name="post-id" value="{{post.id}}" />
+      <input
+        class="form-control"
+        type="text"
+        name="post-title"
+        value="{{post.postTitle}}"
+        style="border-color:#00FF41; background-color: rgb(7, 7, 7); color:#00FF41; "
+      />
+    </div>
+    <div>
+      <label class="form-">Content:</label>
+      <textarea
+        class="form-textarea form-control"
+        name="post-body"
+        data-number="8"
+        style="background-color:rgb(7, 7, 7); color:#00FF41; border-color:#00FF41;"
+      >{{post.postContent}}</textarea>
+    </div>
+    <br />
+    <button
+      class="btn"
+      type="submit"
+      style="background-color:rgb(7, 7, 7); color:#00FF41; border-color:#00FF41;"
+    >EDIT</button>
+    <button
+      class="btn"
+      type="click"
+      id="delete-btn"
+      style="background-color:rgb(7, 7, 7);color:#00FF41; border-color:#00FF41;"
+      data-id="{{post.id}}"
+    >DELETE</button>
+  </form>
+</div>
+
+<script src="/js/edit.js"></script>

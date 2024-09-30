@@ -1,0 +1,22 @@
+<div class="comments">
+  <br>
+    {{#each this}}
+    <div class="card" style="width: 50%; margin: 0 auto; border: 3.5px solid black; border-radius: 10px; box-shadow: #00FF41 0px 20px 30px -10px;">
+      <div class="card-header  flex-row justify-space-between" style="background-color: rgb(7, 7, 7)">
+        <h2>
+          <a href="/post/{{id}}">
+            <div class="col-8">{{postTitle}}</div>
+          </a>
+        </h2>
+        <div class="col-3">
+        </div>
+      </div>  
+      <div class="card-body" style="background-color: #060305; color:#00FF41">
+      {{commentContent}}
+      <p style="margin: 20px; background-color: #060305;">-posted by {{user.username}} on {{format_date dateCreated}}</p>
+      </div>
+    </div>
+    <br>
+    {{/each}}
+  </div>
+ 
