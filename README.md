@@ -23,4 +23,4 @@ This is Tech blog that allows you to login/ signup, post, comment, edit, and del
 ## links
 
 * GitHub link: https://github.com/CJ237/mvc_Tech_Blog
-* Render Link: 
+* Render Link: https://the-tech-blog-l7vp.onrender.com/
